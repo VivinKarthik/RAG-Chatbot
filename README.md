@@ -5,15 +5,15 @@ Retrieval-Augmented Generation (RAG) enhances the output of large language model
 
 ### How to run?
 
-##### Install the requirements
+#### Install the requirements
 
 pip install -r requirements.txt
 
-##### Create the vector db locally
+#### Create the vector db locally
 
 python vector.py
 
-##### Run the streamlit app for the bot
+#### Run the streamlit app for the bot
 python -m streamlit run chatbot.py
 
 ### Note
