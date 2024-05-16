@@ -13,9 +13,7 @@ import requests
 from langchain.document_loaders import TextLoader
 from langchain_openai import ChatOpenAI
 
-
-#function to load the vectordatabase
-def load_knowledgeBase():
+def load_vectordb():
         model = 'sentence-transformers/all-MiniLM-l6-v2'
         model_kwargs = {'device':'cpu'}
         encode_kwargs = {'normalize_embeddings': False}
@@ -28,7 +26,7 @@ def load_knowledgeBase():
         return db
         
 #function to load the OPENAI LLM
-def load_llm():     
+def load_model():     
         llm = ChatOpenAI(api_key="")
         return llm
 
@@ -52,12 +50,12 @@ def format_docs(docs):
 
 if __name__=='__main__':
         sl.header("Hi I am Sherlock, a question answering bot")
-        sl.write("🤖 You can chat by Entering your queries ")
-        knowledgeBase=load_knowledgeBase()
-        llm=load_llm()
+        sl.write(" You can chat by Entering your queries ")
+        knowledgeBase=load_vectordb()
+        llm=load_model()
         prompt=load_prompt()
         
-        query=sl.text_input('Enter some text')
+        query=sl.text_input('Enter your query')
 
         model = 'sentence-transformers/all-MiniLM-l6-v2'
         model_kwargs = {'device':'cpu'}
