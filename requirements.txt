@@ -1,0 +1,7 @@
+datasets
+faiss-cpu
+sentence-transformers
+requests
+langchain-openai
+streamlit
+langchain
