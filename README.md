@@ -1,7 +1,7 @@
 # RAG-Chatbot
 
 ### What is RAG?
-Retrieval-Augmented Generation (RAG) is the process of optimizing the output of a large language model, so it references an authoritative knowledge base outside of its training data sources before generating a response. RAG extends the already powerful capabilities of LLMs to specific domains or an organization's internal knowledge base, all without the need to retrain the model. It is a cost-effective approach to improving LLM output so it remains relevant, accurate, and useful in various contexts. Primarily focussed on text generation tasks - text summarisation, text generation, question answering etc
+Retrieval-Augmented Generation (RAG) enhances the output of large language models by incorporating information from an authoritative knowledge base beyond their initial training data. This approach leverages the existing strengths of LLMs, extending their capabilities to specific domains or an organization's internal knowledge base without requiring model retraining. RAG offers a cost-effective method for improving the relevance, accuracy, and usefulness of LLM outputs in various contexts, particularly in text generation tasks such as summarization, generation, and question answering.
 
 ### How to run?
 
